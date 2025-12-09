@@ -1,14 +1,12 @@
 {
   "name": "frontendmentor",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://techshri027.github.io/frontendmentor_card",
-
-
   "scripts": {
     "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
@@ -33,5 +31,3 @@
     "vite": "^7.2.4"
   }
 }
-
-

@@ -1,11 +1,9 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import tailwindcss from 'tailwindcss'
+import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
+  base: "/frontendmentor_card/",
   plugins: [
-    react(),          // your plugins go here
-    // tailwindcss()   // normally Tailwind is used via postcss, you may not need this here
+    tailwindcss(),
   ],
-  base: '/frontendmentor_card/'  // <--- base goes here, NOT inside plugins
 })
